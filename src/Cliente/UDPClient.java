@@ -18,8 +18,8 @@ public class UDPClient {
 				byte[] buffer = new byte[1024];
 
 				String ip = "localhost";
-				InetAddress aHost = InetAddress.getByName(ip);
-				int serverPort = 33000;
+				//InetAddress aHost = InetAddress.getByName(ip);
+				//int serverPort = 33000;
 
 				System.out.println("Digite seu nome:");
 				String NOME = entrada.nextLine();
