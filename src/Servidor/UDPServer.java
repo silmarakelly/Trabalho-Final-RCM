@@ -143,14 +143,17 @@ class ThreadBroadcast implements Runnable {
 	public void run() {
 		
 		String dados = new String(packet.getData());
-		System.out.println("conectados: "+dados);
+		String [] info = dados.split(":");
+		String mac = info[0];
+		String nome = info[1];
+		System.out.println("conectados: "+nome);
 		//conectados[0] = conectados[cont]+dados+"/n";
 		//cont = cont++;
 		//for (int i=0; i<cont; i++) {
 			//System.out.println(conectados[i]);
 			
 		//}
-		System.out.println("Deseja conectar-se com " + dados + "?(sim/não)");
+		System.out.println("Deseja conectar-se com " + nome + "?(sim/não)");
 		String desejo = entrada.nextLine();
 		
 		

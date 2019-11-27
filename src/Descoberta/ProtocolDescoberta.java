@@ -10,7 +10,7 @@ public class ProtocolDescoberta {
 	public void broadcast(String broadcastMessage, InetAddress address, DatagramSocket socket) throws IOException {
 
 		socket.setBroadcast(true);
-		byte[] buffer = new byte[30];
+		byte[] buffer = new byte[1024];
 
 		String msgrecebe = "b/"+broadcastMessage;
 		buffer = msgrecebe.getBytes();
