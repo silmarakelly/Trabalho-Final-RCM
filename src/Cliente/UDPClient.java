@@ -17,7 +17,7 @@ public class UDPClient {
 				aSocket = new DatagramSocket();
 				byte[] buffer = new byte[1024];
 
-				String ip = "localhost";
+				//String ip = "localhost";
 				//InetAddress aHost = InetAddress.getByName(ip);
 				//int serverPort = 33000;
 
@@ -33,11 +33,11 @@ public class UDPClient {
 
 				String MAC = macAddress.substring(0, macAddress.length() - 1);
 				String resposta = MAC + ":" + NOME;
-				System.out.println("Deseja fazer broadcast?");
-				String entradacli = entrada.nextLine();
-				if (entradacli.equals("sim")) {
+				//System.out.println("Deseja fazer broadcast?");
+				//String entradacli = entrada.nextLine();
+				//if (entradacli.equals("sim")) {
 					PD.broadcast(resposta, InetAddress.getByName("255.255.255.255"), aSocket);
-				}
+				//}
 
 				while (true) {
 					DatagramPacket reply = new DatagramPacket(buffer, buffer.length);
