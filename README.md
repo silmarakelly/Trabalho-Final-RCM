@@ -1,4 +1,4 @@
-# trabalhoredesmoveis
+# Trabalho Redes Moveis
 
 Trabalho final da disciplina de redes de comunicações moveis!
 O trabalho é um chat usando a tecnologia wi-fi, 
